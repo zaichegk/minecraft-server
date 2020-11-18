@@ -1,3 +1,0 @@
-%minecraft ALL=(ALL) NOPASSWD:/usr/bin/killall
-%minecraft ALL=(ALL) NOPASSWD:/usr/sbin/knockd
-%minecraft ALL=(ALL) NOPASSWD:/usr/lib/jvm/java-1.8-openjdk/bin
