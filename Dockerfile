@@ -29,10 +29,10 @@ COPY files/sudoers* /etc/sudoers.d
 
 EXPOSE 25565 25575
 
-COPY . /home/minecraft 
-RUN chown minecraft:minecraft /home/minecraft/server.properties
+RUN wget https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar
+COPY . /home/minecraft.
+RUN chown minecraft:minecraft /home/minecraft/server.properties /home/minecraft/server.jar
 WORKDIR /home/minecraft
 USER minecraft
 
 CMD ["java", "-jar","server.jar"]
- 
