@@ -1,7 +1,6 @@
 # minecraft-server
 
 Server settings are in the server.properties file
-
 Tested on server version 1.14.4
 
 Server is using ports 25565 and 25575
